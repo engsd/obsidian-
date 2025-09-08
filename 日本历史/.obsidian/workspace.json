@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "201a60c16e0e0571",
+    "type": "split",
+    "children": [
+      {
+        "id": "a45fc5a31838a500",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2cca28fa2d9f9ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. 历史转折推演：关键决策压力测试/5.2 明治维新：制度移植的风险控制/5.2.1 宪法制定的博弈矩阵.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5.2.1 宪法制定的博弈矩阵"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cab20d6c5f5ffd1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "666b33240546c85b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c89304d5e59ca1d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "3546b3380aba0bf4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e7c6c36e75cd2b00",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 469.5
+  },
+  "right": {
+    "id": "cf70c9a240b7fc0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d03cfcb188f98aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "089a0a2666a703a8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2. 武士阶层进化：从暴力机器到道德符号/2.1 武士身份的二象性/2.1.1 “侍”的词源学透视.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2.1.1 “侍”的词源学透视 的反向链接列表"
+            }
+          },
+          {
+            "id": "644dbf8d7e8839f3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2. 武士阶层进化：从暴力机器到道德符号/2.1 武士身份的二象性/2.1.1 “侍”的词源学透视.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2.1.1 “侍”的词源学透视 的出链列表"
+            }
+          },
+          {
+            "id": "6833e13ec8f69db4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "909b294bf4b87bd2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2. 武士阶层进化：从暴力机器到道德符号/2.1 武士身份的二象性/2.1.1 “侍”的词源学透视.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2.1.1 “侍”的词源学透视 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "f2cca28fa2d9f9ba",
+  "lastOpenFiles": [
+    "5. 历史转折推演：关键决策压力测试/5.1 黑船来航：佩里叩关的博弈推演/5.1.2 开国与锁国的成本收益分析.md",
+    "5. 历史转折推演：关键决策压力测试/5.1 黑船来航：佩里叩关的博弈推演/5.1.1 幕府决策树的崩溃节点.md",
+    "5. 历史转折推演：关键决策压力测试/5.1 黑船来航：佩里叩关的博弈推演/5.1 黑船来航：佩里叩关的博弈推演 MOC.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.4 明治维新的“和魂洋才”悖论/4.4.2 天皇制与现代国家机器的嫁接.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.4 明治维新的“和魂洋才”悖论/4.4.1 “脱亚入欧”的口号与实质.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.4 明治维新的“和魂洋才”悖论/4.4 明治维新的“和魂洋才”悖论 MOC.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.3 兰学革命：西方科学的“选择性”输入/4.3.2 锁国政策下的知识走私网络.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.3 兰学革命：西方科学的“选择性”输入/4.3.1 从“红毛书”到解剖学革命.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.2 儒家伦理的“工具化”应用/4.2.2 “忠”的绝对化与“孝”的相对化.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.2 儒家伦理的工具化应用/4.2.1 从律令到武家法.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.2 儒家伦理的工具化应用/4.2 儒家伦理的工具化应用 MOC.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.2 儒家伦理的“工具化”应用/4.2.1 从“律令”到“武家法”.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.1 汉传佛教的“日本化”重构/4.1.1 从“镇护国家”到“个人解脱”.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.1 汉传佛教的“日本化”重构/4.1.2 禅宗与武士道的精神共鸣.md",
+    "4. 文明演进算法：外来文化的本土化路径/4.1 汉传佛教的“日本化”重构/4.1 汉传佛教的“日本化”重构 MOC.md",
+    "名词解释/知行.md",
+    "3. 封建制度力学：集权与分权的动态平衡/3.1 “一所悬命”：土地所有权的底层逻辑/3.1.2 “知行”制度的权力确认机制.md",
+    "3. 封建制度力学：集权与分权的动态平衡/3.1 “一所悬命”：土地所有权的底层逻辑/3.1.1 土地与武士的绑定关系.md",
+    "日本历史学习总览.md",
+    "日本历史.md",
+    "3. 封建制度力学：集权与分权的动态平衡/3.1 “一所悬命”：土地所有权的底层逻辑/3.1 “一所悬命”：土地所有权的底层逻辑 MOC.md",
+    "2. 武士阶层进化：从暴力机器到道德符号/2.2 武士道：从杀人术到道德哲学/2.2.1 《叶隐》：瞬间美学与死亡冲动.md",
+    "2. 武士阶层进化：从暴力机器到道德符号/2.2 武士道：从杀人术到道德哲学/2.2.2 新渡户稻造的“系统化”工程.md",
+    "2. 武士阶层进化：从暴力机器到道德符号/2.2 武士道：从杀人术到道德哲学/2.2 武士道：从杀人术到道德哲学 MOC.md",
+    "2. 武士阶层进化：从暴力机器到道德符号/2.1 武士身份的二象性/2.1.2 作为“暴力承包商”的早期武士.md",
+    "2. 武士阶层进化：从暴力机器到道德符号/2.1 武士身份的二象性/2.1.1 “侍”的词源学透视.md",
+    "名词解释",
+    "6. 现代性映射：封建基因的当代显形/6.3 文化心理的深层结构",
+    "6. 现代性映射：封建基因的当代显形/6.2 政治结构的仪式化权力",
+    "6. 现代性映射：封建基因的当代显形/6.1 企业社会的封建DNA",
+    "6. 现代性映射：封建基因的当代显形",
+    "5. 历史转折推演：关键决策压力测试/5.3 二战决策：军部暴走的系统漏洞",
+    "5. 历史转折推演：关键决策压力测试/5.2 明治维新：制度移植的风险控制",
+    "5. 历史转折推演：关键决策压力测试/5.1 黑船来航：佩里叩关的博弈推演",
+    "5. 历史转折推演：关键决策压力测试",
+    "4. 文明演进算法：外来文化的本土化路径/4.4 明治维新的“和魂洋才”悖论"
+  ]
+}

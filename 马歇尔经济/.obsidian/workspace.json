@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "4c78ca05316e7bb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4546d9376cca36b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5701aa0550c81e28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 经济学思维觉醒：从日常困惑到理论洞察/1.1 经济学家的思维密码：解密日常决策背后的隐藏逻辑/1.1.1 经济学作为生活侦探学的本质.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1.1.1 经济学作为生活侦探学的本质"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "204ed2d4984f7f9c",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b55dc06984d5850",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b17a36ef870bb45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "cc162c10e34ddecf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ca6ce0a28ee3f7f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 454.5
+  },
+  "right": {
+    "id": "489c0665950b0943",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7bc5c3d74426e61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5570012671f52012",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. 经济学思维觉醒：从日常困惑到理论洞察/1.1 经济学家的思维密码：解密日常决策背后的隐藏逻辑/1.1.1 经济学作为生活侦探学的本质.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "1.1.1 经济学作为生活侦探学的本质 的反向链接列表"
+            }
+          },
+          {
+            "id": "caf1a28adb1241c4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. 经济学思维觉醒：从日常困惑到理论洞察/1.1 经济学家的思维密码：解密日常决策背后的隐藏逻辑/1.1.1 经济学作为生活侦探学的本质.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "1.1.1 经济学作为生活侦探学的本质 的出链列表"
+            }
+          },
+          {
+            "id": "c855051219ffb2c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "9b00cb511ae4a20a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1. 经济学思维觉醒：从日常困惑到理论洞察/1.1 经济学家的思维密码：解密日常决策背后的隐藏逻辑/1.1.1 经济学作为生活侦探学的本质.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "1.1.1 经济学作为生活侦探学的本质 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "5701aa0550c81e28",
+  "lastOpenFiles": [
+    "mxe.md",
+    "2. 需求迷宫：解码消费行为的神经经济学/2.1 欲望的神经密码：大脑如何评估价值/2.1.1 多巴胺经济学：欲望满足的神经化学机制.md",
+    "2. 需求迷宫：解码消费行为的神经经济学/2.1 欲望的神经密码：大脑如何评估价值/2.1 欲望的神经密码：大脑如何评估价值 MOC.md",
+    "1. 经济学思维觉醒：从日常困惑到理论洞察/1.1 经济学家的思维密码：解密日常决策背后的隐藏逻辑/1.1 经济学家的思维密码：解密日常决策背后的隐藏逻辑 MOC.md",
+    "mxe学习总览.md"
+  ]
+}

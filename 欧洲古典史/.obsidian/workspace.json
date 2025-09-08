@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "2920a4634cd80e90",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc40db0fc248b4dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28a89c207a7ea276",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4.3 工业革命与社会变迁：生产力与社会结构的双重革新/4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ed64a808b6204f68",
+    "type": "split",
+    "children": [
+      {
+        "id": "30ae3cdb41482ab6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e792c86126492c06",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "ef217a498c16eaec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "76a0d31fd1c31873",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6dd1bd743594b082",
+    "type": "split",
+    "children": [
+      {
+        "id": "89ecd30042ad507a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4b9b51026760e65",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4.3 工业革命与社会变迁：生产力与社会结构的双重革新/4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃 的反向链接列表"
+            }
+          },
+          {
+            "id": "ccd0a2e7a416f6dc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4.3 工业革命与社会变迁：生产力与社会结构的双重革新/4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃 的出链列表"
+            }
+          },
+          {
+            "id": "8d44ae58b7d61791",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "069330eecd782cf6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4.3 工业革命与社会变迁：生产力与社会结构的双重革新/4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "28a89c207a7ea276",
+  "lastOpenFiles": [
+    "4.3 工业革命与社会变迁：生产力与社会结构的双重革新/4.3.2 城市化、阶级分化与社会挑战：新矛盾的涌现.md",
+    "4.3 工业革命与社会变迁：生产力与社会结构的双重革新/4.3.1 蒸汽机的轰鸣与工厂的诞生：生产力的飞跃.md",
+    "2. 中古时代的欧洲：信仰、封建与思想的锻造：黑暗与光明交织的叙事/2.2 封建制度与社会秩序的重构：稳定的碎片化/2.2.1 封建领主与农民的生活图景：权利与义务的契约.md",
+    "2. 中古时代的欧洲：信仰、封建与思想的锻造：黑暗与光明交织的叙事/2.2 封建制度与社会秩序的重构：稳定的碎片化/封建制度与社会秩序的重构：稳定的碎片化 MOC.md",
+    "2. 中古时代的欧洲：信仰、封建与思想的锻造：黑暗与光明交织的叙事/2.2 封建制度与社会秩序的重构：稳定的碎片化/2.2.2 骑士精神与十字军东征：信仰与征服的二重奏.md",
+    "3. 欧洲的复兴与变革：新时代的序章/3.3 大航海时代：世界版图的扩展与全球化雏形/2.2.2 骑士精神与十字军东征：信仰与征服的二重奏.md",
+    "欧洲古典史总览.md",
+    "1. 欧洲文明的起源与早期塑造：基因的编码与变奏/1.2 罗马的兴衰：从共和国到帝国的制度演进/1.2.2 凯撒与帝制的奠基：权力核心的重塑.md",
+    "1. 欧洲文明的起源与早期塑造：基因的编码与变奏/1.2 罗马的兴衰：从共和国到帝国的制度演进/罗马的兴衰：从共和国到帝国的制度演进 MOC.md",
+    "1.2.2 从共和国到帝国的转型：制度疲劳与权力集中的必然性.md",
+    "1. 欧洲文明的起源与早期塑造：基因的编码与变奏/1.2 罗马的兴衰：从共和国到帝国的制度演进/1.2.1 罗马共和国的政治结构与扩张：帝国的蓝图.md",
+    "1. 欧洲文明的起源与早期塑造：基因的编码与变奏/1.1 古希腊文明：思想与制度的早期算法/1.1.2 希波战争与城邦的联合：文明生存的极限挑战.md",
+    "1. 欧洲文明的起源与早期塑造：基因的编码与变奏/1.1 古希腊文明：思想与制度的早期算法/古希腊文明：思想与制度的早期算法 MOC.md",
+    "1. 欧洲文明的起源与早期塑造：基因的编码与变奏/1.1 古希腊文明：思想与制度的早期算法/1.1.1 雅典的崛起与民主的萌芽：一场公民参与的社会实验.md",
+    "1.2.1 罗马共和国的制度设计：权力制衡的古典智慧.md",
+    "3. 欧洲的复兴与变革：新时代的序章/3.2 宗教改革：信仰的分裂与现代国家的萌芽/3.2.1 马丁·路德与新教的兴起：一场触及灵魂的辩论.md",
+    "3. 欧洲的复兴与变革：新时代的序章/3.2 宗教改革：信仰的分裂与现代国家的萌芽/3.2.1 马丁路德与新教的兴起：一场触及灵魂的辩论.md",
+    "3. 欧洲的复兴与变革：新时代的序章/3.2 宗教改革：信仰的分裂与现代国家的萌芽/宗教改革：信仰的分裂与现代国家的萌芽 MOC.md",
+    "3. 欧洲的复兴与变革：新时代的序章/3.2 宗教改革：信仰的分裂与现代国家的萌芽/3.2.3 英国宗教改革与民族国家的崛起：王权与教权的博弈.md",
+    "4. 现代欧洲的塑形：启蒙、革命与工业化的冲击波/4.1 启蒙运动：理性的解放与旧制度的挑战/启蒙运动：理性的解放与旧制度的挑战 MOC.md",
+    "4. 现代欧洲的塑形：启蒙、革命与工业化的冲击波/4.1 启蒙运动：理性的解放与旧制度的挑战/4.1.2 科学革命的加速：知识的范式转换.md",
+    "4. 现代欧洲的塑形：启蒙、革命与工业化的冲击波/4.1 启蒙运动：理性的解放与旧制度的挑战/4.1.1 思想家与新思潮：批判与重建.md",
+    "4.2 政治革命的冲击：权力与自由的较量/4.2.1 法国大革命的爆发与理念：旧世界的崩塌.md",
+    "4.2 政治革命的冲击：权力与自由的较量/4.2.2 拿破仑战争与欧洲格局重塑：帝国的铁蹄与民族主义的觉醒.md",
+    "欧洲古典史.md",
+    "4.3 工业革命与社会变迁：生产力与社会结构的双重革新",
+    "4.2 政治革命的冲击：权力与自由的较量"
+  ]
+}

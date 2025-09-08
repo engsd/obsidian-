@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "638a3950c64b12d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "56161a0405383251",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a659663c13eed21c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. 句法工程师的工具箱：介词、形容词、副词、数词、连词/4.1 位置的艺术：介词的精妙用法/4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词）"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2bd9cadb1101206b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7860c9a06a0d538",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e7a81a6a7566fb2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "e796e89a312f23e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ac9470f074129e21",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fd1a9bc7849eeb01",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dff3b4ce0bb4577",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48af8803427b0c02",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4. 句法工程师的工具箱：介词、形容词、副词、数词、连词/4.1 位置的艺术：介词的精妙用法/4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词）.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词） 的反向链接列表"
+            }
+          },
+          {
+            "id": "8b270e5b41ac3f0c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4. 句法工程师的工具箱：介词、形容词、副词、数词、连词/4.1 位置的艺术：介词的精妙用法/4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词）.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词） 的出链列表"
+            }
+          },
+          {
+            "id": "a16c216fcd4b7bd9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "69e4ccb53565a5c2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4. 句法工程师的工具箱：介词、形容词、副词、数词、连词/4.1 位置的艺术：介词的精妙用法/4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词）.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "4.1.1 介词的“时空坐标”：介词分类（表示时间、表示方向、方位、其他介词） 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "a659663c13eed21c",
+  "lastOpenFiles": [
+    "4. 句法工程师的工具箱：介词、形容词、副词、数词、连词/4.1 位置的艺术：介词的精妙用法/4.1 位置的艺术：介词的精妙用法 MOC.md",
+    "5. 句子的“嵌套”艺术：从句与特殊结构/5.1 从句的“分身术”：非谓语、名词性、定语、状语从句/5.1 从句的“分身术”：非谓语、名词性、定语、状语从句 MOC.md",
+    "5. 句子的“嵌套”艺术：从句与特殊结构/5.1 从句的“分身术”：非谓语、名词性、定语、状语从句/5.1.1 动词的“分身术”：非谓语动词（不定式、动名词、现在分词、过去分词）的辨析、否定、原因、复合句、判断、搭配.md",
+    "5. 句子的“嵌套”艺术：从句与特殊结构/5.1 从句的“分身术”：非谓语、名词性、定语、状语从句/5.1.3 句子的“修饰”大师：定语从句（种类、关系词、特殊情况、引导非限制性定语从句）.md"
+  ]
+}
