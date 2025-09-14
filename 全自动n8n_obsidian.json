@@ -1,0 +1,326 @@
+{
+  "name": "全自动n8n_obsidian",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        672,
+        192
+      ],
+      "id": "f2564728-cfd3-49ff-91e3-cc76401b3f57",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "hqBEX3AEXUybj7oN",
+          "name": "DeepSeek account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"分析结果\":\"\",\n    \"推荐的一个主题\":\"\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        816,
+        320
+      ],
+      "id": "89c46f09-64fc-446d-8af1-24f5a6a36b1f",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "command": "chcp 65001 && dir \"C:\\Users\\eng\\Desktop\\learn_anything\" /s /ad /b"
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        256,
+        16
+      ],
+      "id": "6b64d940-ae8a-47af-a8a9-236a217bfa10",
+      "name": "提取两级文件夹中的内容"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 目标：将所有文件夹的层级关系格式化后，合并成一个单一的文本块，并作为单个项目输出。\n\n// 1. 获取并处理输入路径\nconst stdout = $input.first().json.stdout;\nconst allPaths = stdout.split(/\\r?\\n/).filter(p => p.trim() !== \"\"); // 分割并过滤空行\n\n// --- 请务必修改为您自己的基础路径 ---\nconst basePath = \"C:\\\\Users\\\\eng\\\\Desktop\\\\learn_anything\\\\\";\n\n// 2. 构建文件夹父子关系的数据结构\nconst folderStructure = {};\n\nfor (const path of allPaths) {\n  if (path.trim().toLowerCase() === basePath.slice(0, -1).toLowerCase()) {\n    continue;\n  }\n  \n  const relativePath = path.replace(basePath, \"\");\n  const parts = relativePath.split('\\\\');\n\n  if (parts.length === 1) {\n    const parentName = parts[0];\n    if (!folderStructure[parentName]) {\n      folderStructure[parentName] = [];\n    }\n  } else if (parts.length === 2) {\n    const parentName = parts[0];\n    const childName = parts[1];\n    if (!folderStructure[parentName]) {\n      folderStructure[parentName] = [];\n    }\n    folderStructure[parentName].push(childName);\n  }\n}\n\n// 3. 将所有格式化后的字符串存入一个数组\nconst formattedStrings = [];\nlet folderCounter = 1;\n\nfor (const parentName in folderStructure) {\n  const children = folderStructure[parentName];\n  \n  let outputString = `${folderCounter}号文件夹：${parentName}`;\n  \n  if (children.length > 0) {\n    outputString += `，子文件夹名称：${children.join('、')}`;\n  }\n  \n  formattedStrings.push(outputString);\n  folderCounter++;\n}\n\n// 4. 将数组中的所有字符串用换行符连接成一个大的文本块，并作为单个项目返回\nreturn [{\n  json: {\n    data: formattedStrings.join('\\n')\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        16
+      ],
+      "id": "ebb430e7-d5fa-454e-90c9-d9708079856d",
+      "name": "输出为一个大文本块"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=你是一位专业的学习顾问。以下是我按主题整理的学习文件夹列表，其中包含了主类别和具体的子类别。\n\n# 我的学习内容列表:\n{{ $json.data }}\n\n# 你的任务:\n1.  **分析学习模式**: 根据这份列表，对我的学习重点、知识广度和深度进行整体分析。\n2.  **提供战略建议**: 基于我的整体知识结构，为我推荐一个最相关的新学习方向，或是一个最值得深入研究的具体领域。请详细说明推荐的理由。\n\n3.输出的内容中，\"推荐的一个主题\"只需要一个名称，其他什么都不需要",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        672,
+        16
+      ],
+      "id": "221eed34-9127-4ae2-8eaa-5dcb5c9566ce",
+      "name": "推荐内容"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=保存上一个节点的：{{ $json.output[\"推荐的一个主题\"] }}.只需要原封不动地输出就可以。\n# 角色\n你将扮演我的“**认知系统与知识架构师 AI**”。你的核心使命是将任何学习主题，转化为一个**具有强烈叙事推进感的学习旅程**。这个旅程将以一个既符合认知科学原理、又充满内在驱动力、且为深度笔记（如Obsidian）量身定制的结构化大纲呈现。\n\n你必须将以下两个核心部分——**[第一部分：战略认知内核]** 和 **[第二部分：输出格式蓝图]**——视为一个不可分割的整体来执行任务。\n\n---\n\n### **第一部分：战略认知内核 (你的思考方式)**\n\n这是你设计所有学习路径的底层哲学。你必须在心中构建一个融合了**系统流程（COS）**和**体验核心（驱动引擎）**的思考框架。\n\n#### **1. 系统流程 (COS - The What)**\n你设计的大纲必须暗含以下逻辑递进的学习阶段：\n- **规划 (Planning):** 识别核心模块。\n- **学习 (Acquisition):** 主动获取信息。\n- **理解 (Construction):** 深度建构意义。\n- **巩固 (Consolidation):** 确保长期记忆。\n- **应用 (Application):** 将知识付诸实践。\n- **反思 (Reflection):** 迭代优化过程。\n- **习惯化 (Habituation):** 內化为自动行为。\n\n#### **2. 体验核心 (驱动引擎 - The How)**\n上述流程的灵魂，必须通过将知识点转化为以下体验来实现。这部分的哲学，将直接体现在下方[第二部分]的“知识钩子”的具体设计中：\n- **谜题驱动:** 将知识包装成待解之谜。\n- **探寻规律:** 引导发现其第一性原理。\n- **连接现实:** 明确其应用价值与影响。\n- **概念连接:** 构建跨领域、跨学科的知识网络。\n- **故事化/类比:** 用生动的比喻赋予概念以生命。\n\n---\n\n### **第二部分：输出格式蓝图 (你的表达方式)**\n\n你的所有思考成果，都必须严格按照以下这个为深度思考和Obsidian笔记软件设计的**四层Markdown结构**来呈现。\n\n1.  **二级标题 (##): 核心宏观知识分类**\n    *   代表主题下的核心组成部分。使用 `1.`、`2.` 等数字前缀。\n    *   **【新增指令】**：每个二级标题的命名本身就应概括这一阶段的**核心使命或隐喻**，使其成为学习旅程中的一个章节名（例如，`## 1. 奠定世界观` 而非 `## 1. 核心概念`）。\n\n2.  **三级标题 (###): 具体独立知识主题**\n    *   代表一个独立的学习模块。使用 `1.1`、`1.2` 等数字前缀。\n\t-    单独使用一块三级标题来将本次二级标题下出现的所有名词罗列出来并给出名词解释。**如3.1.3：本阶段核心名词解释**\n    *   **【新增指令】**：**这是实现“推进式学习”的关键**。每个三级标题必须紧跟一行用*斜体*包裹的“**过渡性陈述**”。这个陈述的作用是**承上启下**，明确指出“**我们刚刚了解了A，但它暴露出了B问题/引出了B需求，因此我们现在必须学习C**”。这会创造出强烈的逻辑流和学习的必要性。\n\n3.  **无序列表 (-): 原子级知识点**\n    *   代表一个独立的、不可再分的知识单元，将对应一篇独立的笔记。使用 `1.1.1`、`1.1.2` 等数字前缀。\n\n4.  **知识钩子 (- 钩子:)**\n    *   **这是整个输出的灵魂，是你将[第一部分]的思考哲学具象化的关键。**\n    *   在每个**原子级知识点**下方，使用缩进的无序列表，提供**至少三种不同类型**的启发性钩子。\n    *   你必须从以下五种钩子类型中进行**混合搭配**，以确保思考的广度和深度：\n\n        *   **钩子: [谜题]** - 提出一个挑战性问题或思想实验。\n        *   **钩子: [规律]** - 引导探索其底层机制或第一性原理。\n        *   **钩子: [影响]** - 连接到具体的现实应用场景、价值或后果。\n        *   **钩子: [连接]** - 与其他（甚至跨学科）概念建立横向联系。\n        *   **钩子: [类比]** - 用一个生动的比喻或故事来简化和理解复杂概念。\n\n---\n\n# **示例**\n\n## 输入主题:\n\"Git入门\"\n\n## 期望输出:\n```markdown\n## 1. 奠定世界观：Git的宇宙模型\n*我们首先要理解Git是如何看待“项目历史”的，这构成了后续所有操作的基础。*\n\n### 1.1 三重空间：工作区、暂存区与版本库\n*我们知道了Git是一个版本控制工具，但它究竟在哪里、如何存放我们的代码？答案就在这三个核心空间中。*\n- 1.1.1 工作区 (Working Directory)\n  - 钩子: [连接] 它与我们电脑里任何一个普通文件夹的本质区别在哪里？\n  - 钩子: [影响] `git status` 命令是如何成为我们感知工作区混乱程度的“天气预报”的？\n  - 钩子: [谜题] 如果你在工作区犯了灾难性错误（比如 `rm -rf *`），Git能在多大程度上成为你的“时间机器”？\n- 1.1.2 暂存区 (Stage/Index)\n  - 钩子: [谜题] 为什么Git的设计者要多此一举地发明“暂存区”？这个“中间人”的存在，到底解决了什么核心的、令人头疼的问题？\n  - 钩子: [类比] 如果把一次提交(commit)比作一次正式的“新闻发布会”，那么暂存区扮演了什么角色？是“草稿箱”还是“待发布的最终稿”？\n  - 钩子: [影响] 精通 `git add -p` 这种对暂存区的精细操作，如何将一个程序员的水平与“只会 `git add .`”的程序员区分开来？\n- 1.1.3 版本库 (Repository)\n  - 钩子: [规律] `.git` 这个神秘的文件夹里，到底隐藏着什么魔法？它用什么样的数据结构（提示：不是简单的复制粘贴）来记录我们每一次的变更历史？\n  - 钩子: [连接] 版本库的“分布式”特性，与我们熟悉的“中心化”存储（如百度网盘）在哲学上有什么根本不同？\n  - 钩子: [故事] 版本库是如何让Linus Torvalds在管理庞大的Linux内核开发时，还能安心去度假的？\n\n### 1.2 时间指针：理解HEAD\n*我们现在有了存放历史的“空间”（版本库），但这还不够。为了在历史长河中自由穿梭，我们还需要一个导航工具——HEAD指针。*\n- 1.2.1 HEAD的本质\n  - 钩子: [类比] 如果把Git的分支历史想象成一条地铁线路，那么HEAD指针是你当前所在的“车站”，还是驾驶室里的“线路选择器”？\n  - 钩子: [规律] HEAD通常指向一个分支的引用，这背后隐藏了什么设计巧思，使得切换分支如此高效？\n- 1.2.2 分离头指针 (Detached HEAD)\n  - 钩子: [故事] 进入“分离头指针”状态，就像是坐上了一辆不属于任何线路的“幽灵列车”。这趟旅程有什么风险？如何安全返回常规线路？\n  - 钩子: [影响] 在什么常见的操作（如 `git checkout <commit_hash>`）中，我们会不经意间登上这趟“幽灵列车”？\n\n## 2. 掌握基础咒语：本地仓库操作\n*理解了世界观之后，我们现在需要学习能与这个世界互动的基本“咒语”（命令），来真正掌控我们的项目历史。*\n... (后续内容以此类推) ...\n```\n---\n\n# **开始执行**\n\n现在，请严格遵循以上这个包含了**叙事性结构**、**战略内核**与**输出蓝图**的完整系统，为我生成关于{{ $json.output['推荐的一个主题'] }} 的学习大纲。",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        992,
+        16
+      ],
+      "id": "73f566f5-44d6-4a49-97e7-ddd8ce8f0850",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        992,
+        320
+      ],
+      "id": "0791e9fd-f3ac-44bc-a26f-832f23af62ff",
+      "name": "DeepSeek Chat Model1",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "hqBEX3AEXUybj7oN",
+          "name": "DeepSeek account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"Markdown\":\"\",\n    \"推荐的一个主题\":\"\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        1136,
+        208
+      ],
+      "id": "4dbda6a4-5a85-4e5b-b522-852e62e5036d",
+      "name": "Structured Output Parser1"
+    },
+    {
+      "parameters": {
+        "command": "={{ $json.command }}"
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        16
+      ],
+      "id": "ceb9e3c3-6c06-4bf5-978c-e79e97dc7080",
+      "name": "Execute Command"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 导入 n8n 允许的内置模块\nconst { tmpdir } = require('os');\nconst { join } = require('path');\nconst { writeFileSync } = require('fs');\n\n// 1. 获取输入数据\nconst inputData = $input.first().json;\nconst markdownContent = inputData.output.Markdown;\nconst originalTopic = inputData.output['推荐的一个主题'];\n\n// 2. 清洗主题标题\nconst safeFolderName = originalTopic.replace(/[\\\\/:*?\"<>|]/g, '').trim().replace(/^\\.+|\\.+$/g, '');\nif (!safeFolderName) {\n  throw new Error('清洗后的主题名称为空。');\n}\n\n// 3. 定义所有需要的 Windows 路径\nconst basePath = 'C:\\\\Users\\\\eng\\\\Desktop\\\\learn_anything';\nconst pythonScriptPath = `${basePath}\\\\全自动知识库构建器_修正版.py`;\nconst folderPath = `${basePath}\\\\${safeFolderName}`;\nconst filePath = `${folderPath}\\\\${safeFolderName}.md`;\n\n// 4. 构建终极版的 PowerShell 脚本内容\nconst psScriptContent = `\n# 设置严格模式，增加脚本健壮性\nSet-StrictMode -Version Latest\n\n# 定义所有路径和内容变量\n$folderPath = '${folderPath.replace(/'/g, \"''\")}'\n$filePath = '${filePath.replace(/'/g, \"''\")}'\n$pythonScript = '${pythonScriptPath.replace(/'/g, \"''\")}'\n$markdownContent = @'\n${markdownContent.replace(/'/g, \"''\")}\n'@\n\n# --- 核心操作：三步连贯执行 ---\ntry {\n    # 步骤 1: 创建文件夹\n    if (-not (Test-Path -Path $folderPath -PathType Container)) {\n        New-Item -ItemType Directory -Path $folderPath | Out-Null\n    }\n    \n    # 步骤 2: 将内容写入 .md 文件\n    Set-Content -Path $filePath -Value $markdownContent -Encoding UTF8\n    \n    # 步骤 3: 确认文件存在后，立即调用 Python 脚本\n    Write-Host \"文件创建成功，正在调用 Python 脚本...\"\n    # 使用 & (Call operator) 来执行命令\n    & python -X utf8 $pythonScript $filePath $folderPath\n    \n    Write-Host \"Python 脚本执行完毕。工作流成功！\"\n} catch {\n    Write-Error \"脚本执行失败: $_\"\n    exit 1\n}\n`;\n\n// 5. 将脚本内容写入一个带 BOM 的临时 .ps1 文件\nconst tempFileName = `n8n_script_${Date.now()}.ps1`;\nconst tempScriptPath = join(tmpdir(), tempFileName);\nconst BOM = \"\\ufeff\";\nwriteFileSync(tempScriptPath, BOM + psScriptContent, { encoding: 'utf8' });\n\n// 6. 构建最终的、唯一的执行命令\nconst finalCommand = `powershell -ExecutionPolicy Bypass -File \"${tempScriptPath}\"`;\n\n// 7. 将命令输出\nreturn [{\n  json: {\n    command: finalCommand\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1344,
+        16
+      ],
+      "id": "52255365-31c4-4a81-b112-87941b55c8ee",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7,
+              "triggerAtMinute": null
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        48,
+        16
+      ],
+      "id": "1d727f00-38a1-401a-817c-25cbf4341ab7",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "content": "=成功生成{{ $json.output[\"推荐的一个主题\"] }}"
+      },
+      "type": "n8n-nodes-lark-webhook.larkWebhook",
+      "typeVersion": 1,
+      "position": [
+        1440,
+        176
+      ],
+      "id": "39254021-dad0-481d-8f89-18b1c9a23783",
+      "name": "Lark WebHook",
+      "credentials": {
+        "larkWebhookApi": {
+          "id": "kpDPcV5DzvB4zFdn",
+          "name": "Lark WebHook account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "推荐内容",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "推荐内容",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "提取两级文件夹中的内容": {
+      "main": [
+        [
+          {
+            "node": "输出为一个大文本块",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "输出为一个大文本块": {
+      "main": [
+        [
+          {
+            "node": "推荐内容",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "推荐内容": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Lark WebHook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser1": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "Execute Command",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command": {
+      "main": [
+        []
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "提取两级文件夹中的内容",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "96ba575a-1096-491b-bae8-6ee1e93f84f4",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "4bdf14d86a9e8ec0972ef92c964ee1d623223232244a34160452a643ee68f0c5"
+  },
+  "id": "ZCyWyGWdgHfxqr6a",
+  "tags": []
+}

@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "f3106469a231eefb",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ec0cbbc7e6eb603",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d8f03f7c6bc47b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "国民收入与经济周期/国民收入核算/国民财富的构成与增长.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "国民财富的构成与增长"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1ecad30bccae6c03",
+    "type": "split",
+    "children": [
+      {
+        "id": "80e34a23d09e83c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "696c7234f606820a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "3ad927c914efcbff",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8389a6c7e3459ac3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9f1a681afda5a983",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1630978e4fde918",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fbc596e11ce49dcc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "分配理论/劳动工资/计件工资与计时工资.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "计件工资与计时工资 的反向链接列表"
+            }
+          },
+          {
+            "id": "b7327038e5d58a66",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "分配理论/劳动工资/计件工资与计时工资.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "计件工资与计时工资 的出链列表"
+            }
+          },
+          {
+            "id": "27fdee9d4752b92b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "c6ad578d62ed7ec1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "分配理论/劳动工资/计件工资与计时工资.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "计件工资与计时工资 的大纲"
+            }
+          },
+          {
+            "id": "26aa570b4309ffa5",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 339.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "4d8f03f7c6bc47b2",
+  "lastOpenFiles": [
+    "国民收入与经济周期/国民收入核算/国民生产总值（GNP）与国内生产总值（GDP）.md",
+    "国民收入与经济周期/国民收入核算/国民收入的定义与衡量.md",
+    "国民收入与经济周期/国民收入核算/国民收入的分配与再分配.md",
+    "国民收入与经济周期/国民收入核算/国民收入核算 MOC.md",
+    "分配理论/劳动工资/计件工资与计时工资.md",
+    "分配理论/劳动工资/工资的决定因素.md",
+    "分配理论/劳动工资/劳动工资 MOC.md",
+    "分配理论/地租与利润/土地改良与地租的关系.md",
+    "分配理论/地租与利润/利润的构成与分配.md",
+    "分配理论/地租与利润/租金与准租金.md",
+    "分配理论/地租与利润/地租与利润 MOC.md",
+    "分配理论/地租与利润/城市地租与农村地租.md",
+    "分配理论/地租与利润/地租的性质与决定因素.md",
+    "copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot-custom-prompts/Remove URLs.md",
+    "copilot-custom-prompts/Explain like I am 5.md",
+    "copilot-custom-prompts/Emojify.md",
+    "马歇尔经济基本原理 总览.md",
+    "未命名.md",
+    "分配理论/劳动工资/劳动效率与工资水平的关系.md",
+    "分配理论/劳动工资/名义工资与实际工资.md",
+    "copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot-custom-prompts/Generate glossary.md",
+    "copilot-custom-prompts/Generate table of contents.md",
+    "copilot-custom-prompts/Make longer.md",
+    "copilot-custom-prompts/Make shorter.md",
+    "copilot-custom-prompts"
+  ]
+}

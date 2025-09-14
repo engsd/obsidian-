@@ -1,0 +1,20 @@
+# Ignore large files that exceed GitHub's limits
+*.epub
+*.pdf
+
+# Ignore temporary files
+.tmp.driveupload/
+
+# Ignore Obsidian configuration files
+.obsidian/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore log files
+*.log
