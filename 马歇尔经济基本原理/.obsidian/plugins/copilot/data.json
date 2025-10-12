@@ -12,13 +12,13 @@
   "azureOpenAIApiDeploymentName": "",
   "azureOpenAIApiVersion": "",
   "azureOpenAIApiEmbeddingDeploymentName": "",
-  "googleApiKey": "",
+  "googleApiKey": "AIzaSyBTNQq9_qm5vQMFYwtY8JHgq4557Uuice0",
   "openRouterAiApiKey": "",
   "xaiApiKey": "",
   "mistralApiKey": "",
   "deepseekApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "deepseek-chat|deepseek",
+  "defaultModelKey": "gemini-2.5-pro|google",
   "embeddingModelKey": "text-embedding-3-small|openai",
   "temperature": 0.1,
   "maxTokens": 6000,
@@ -34,7 +34,7 @@
   "defaultOpenArea": "view",
   "customPromptsFolder": "copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
-  "qaExclusions": "copilot-conversations,copilot-custom-prompts",
+  "qaExclusions": "copilot-conversations,copilot-custom-prompts,copilot",
   "qaInclusions": "",
   "chatNoteContextPath": "",
   "chatNoteContextTags": [],
@@ -57,9 +57,9 @@
       ]
     },
     {
-      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "name": "google/gemini-2.5-flash-lite",
       "provider": "openrouterai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "projectEnabled": true,
@@ -87,7 +87,8 @@
       "projectEnabled": true,
       "capabilities": [
         "vision"
-      ]
+      ],
+      "enableCors": false
     },
     {
       "name": "gpt-5",
@@ -133,6 +134,17 @@
     {
       "name": "gpt-4.1-mini",
       "provider": "openai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ]
+    },
+    {
+      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "provider": "openrouterai",
       "enabled": false,
       "isBuiltIn": true,
       "core": true,
@@ -195,12 +207,13 @@
     {
       "name": "gemini-2.5-pro",
       "provider": "google",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "projectEnabled": true,
       "capabilities": [
         "vision"
-      ]
+      ],
+      "enableCors": true
     },
     {
       "name": "azure-openai",
@@ -282,6 +295,14 @@
       "core": true
     },
     {
+      "name": "gemini-embedding-001",
+      "provider": "google",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true
+    },
+    {
       "name": "text-embedding-3-large",
       "provider": "openai",
       "enabled": true,
@@ -337,10 +358,28 @@
   "autocompleteAcceptKey": "Tab",
   "allowAdditionalContext": true,
   "enableWordCompletion": false,
-  "lastDismissedVersion": null,
+  "lastDismissedVersion": "3.1.0",
   "passMarkdownImages": true,
   "enableCustomPromptTemplating": true,
   "suggestedDefaultCommands": true,
   "reasoningEffort": "low",
-  "verbosity": "medium"
+  "verbosity": "medium",
+  "lexicalSearchRamLimit": 100,
+  "generateAIChatTitleOnSave": true,
+  "enableInlineCitations": true,
+  "autonomousAgentMaxIterations": 4,
+  "autonomousAgentEnabledToolIds": [
+    "localSearch",
+    "readNote",
+    "webSearch",
+    "pomodoro",
+    "youtubeTranscription",
+    "writeToFile",
+    "replaceInFile",
+    "memoryTool"
+  ],
+  "memoryFolderName": "copilot/memory",
+  "enableRecentConversations": false,
+  "enableSavedMemory": false,
+  "maxRecentConversations": 30
 }
