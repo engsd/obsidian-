@@ -1,0 +1,563 @@
+/* ========================================
+   Anki 护眼暗色主题 - 衬线字体优化版
+   适配电脑和平板设备的优雅学习体验
+   ======================================== */
+
+/* 全局变量定义 */
+:root {
+  /* 护眼暗色配色方案 */
+  --bg-primary: #1a1d23;           /* 主背景 - 深蓝灰 */
+  --bg-secondary: #2f3136;         /* 卡片背景 - 中性深灰 */
+  --bg-tertiary: #36393f;          /* 次要背景 - 稍亮深灰 */
+  --bg-hover: #40444b;             /* 悬停背景 */
+  
+  /* 文字颜色 */
+  --text-primary: #e8e8e8;         /* 主文字 - 温和白色 */
+  --text-secondary: #b9bbbe;       /* 次要文字 - 中性灰 */
+  --text-accent: #7289da;          /* 强调文字 - 柔和蓝 */
+  --text-muted: #72767d;           /* 弱化文字 */
+  
+  /* 装饰色彩 */
+  --border-color: #40444b;         /* 边框色 */
+  --highlight: #5865f2;            /* 高亮色 */
+  --success: #43b581;              /* 成功色 */
+  --warning: #faa61a;              /* 警告色 */
+  --shadow: rgba(0, 0, 0, 0.3);    /* 阴影色 */
+  
+  /* 字体设置 */
+  --font-serif: "Times New Roman", "Noto Serif CJK SC", "Source Han Serif SC", 
+                "Songti SC", "SimSun", serif;
+  --font-size-base: 18px;          /* 从16px增加到18px */
+  --font-size-large: 24px;         /* 从20px增加到24px */
+  --font-size-small: 16px;         /* 从14px增加到16px */
+  
+  /* 间距设置 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* 圆角设置 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* 全局重置和基础样式 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: var(--spacing-lg);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* --- 新增的居中布局 --- */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  min-height: 100vh;  
+}
+
+/* 卡片容器样式 */
+.card {
+  max-width: 800px;
+  /*margin: 0 auto;*/
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: 0 8px 32px var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 48px var(--shadow);
+  border-color: var(--highlight);
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-md) 0;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;               /* 从2rem增加到2.5rem */
+  border-bottom: 2px solid var(--highlight);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+  font-size: 1.8rem;               /* 从1.5rem增加到1.8rem */
+  color: var(--text-accent);
+}
+
+h3 {
+  font-size: 1.5rem;               /* 从1.25rem增加到1.5rem */
+}
+
+/* 段落和文本样式 */
+p {
+  margin: 0 0 var(--spacing-md) 0;
+  text-align: center;
+}
+
+/* 强调文本 */
+strong, b {
+  color: var(--text-accent);
+  font-weight: 700;
+}
+
+em, i {
+  color: var(--success);
+  font-style: italic;
+}
+
+/* 其他文本元素居中对齐 */
+code {
+  text-align: center;
+  display: inline-block;
+}
+
+.highlight, .warning, .success {
+  text-align: center;
+  display: block;
+}
+
+.tooltip {
+  text-align: center;
+  display: inline-block;
+}
+
+.math, .chinese, .japanese {
+  text-align: center;
+  display: block;
+}
+
+/* 链接样式 */
+a {
+  color: var(--highlight);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+  border-bottom-color: var(--highlight);
+}
+
+/* 列表样式 */
+ul, ol {
+  margin: 0 0 var(--spacing-md) 0;
+  padding-left: 0;
+  text-align: center;
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+  text-align: center;
+}
+
+ul li::marker {
+  color: var(--text-accent);
+}
+
+ol li::marker {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* 引用块样式 */
+blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--bg-tertiary);
+  border-left: 4px solid var(--highlight);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* 代码样式 */
+code {
+  background: var(--bg-tertiary);
+  color: var(--success);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: var(--bg-tertiary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* 分隔线 */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: var(--spacing-xl) 0;
+}
+
+/* 按钮样式 */
+.button, button, input[type="button"], input[type="submit"] {
+  background: linear-gradient(135deg, var(--highlight), var(--text-accent));
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(88, 101, 242, 0.3);
+}
+
+.button:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(88, 101, 242, 0.4);
+}
+
+.button:active, button:active, input[type="button"]:active, input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* 输入框样式 */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+  outline: none;
+  border-color: var(--highlight);
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.1);
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+th, td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background: var(--bg-hover);
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+tr:hover {
+  background: var(--bg-hover);
+}
+
+/* 特殊内容样式 */
+.highlight {
+  background: linear-gradient(120deg, rgba(88, 101, 242, 0.1) 0%, rgba(114, 137, 218, 0.1) 100%);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--highlight);
+  text-align: center;
+}
+
+.warning {
+  background: rgba(250, 166, 26, 0.1);
+  border-left: 3px solid var(--warning);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin: var(--spacing-md) 0;
+  text-align: center;
+}
+
+.success {
+  background: rgba(67, 181, 129, 0.1);
+  border-left: 3px solid var(--success);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin: var(--spacing-md) 0;
+  text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 17px;        /* 从15px增加到17px */
+    --font-size-large: 21px;       /* 从18px增加到21px */
+    --font-size-small: 15px;       /* 从13px增加到15px */
+  }
+  
+  body {
+    padding: var(--spacing-md);
+  }
+  
+  .card {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+  }
+  
+  h1 {
+    font-size: 2.2rem;             /* 从1.75rem增加到2.2rem */
+  }
+  
+  h2 {
+    font-size: 1.6rem;             /* 从1.375rem增加到1.6rem */
+  }
+  
+  h3 {
+    font-size: 1.3rem;             /* 从1.125rem增加到1.3rem */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 16px;        /* 从14px增加到16px */
+    --font-size-large: 19px;       /* 从16px增加到19px */
+    --font-size-small: 14px;       /* 从12px增加到14px */
+  }
+  
+  body {
+    padding: var(--spacing-sm);
+  }
+  
+  .card {
+    padding: var(--spacing-md);
+  }
+  
+  h1 {
+    font-size: 1.8rem;             /* 从1.5rem增加到1.8rem */
+  }
+  
+  h2 {
+    font-size: 1.4rem;             /* 从1.25rem增加到1.4rem */
+  }
+}
+
+/* 平板横屏优化 */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .card {
+    max-width: 900px;
+    padding: var(--spacing-xl) calc(var(--spacing-xl) * 1.5);
+  }
+}
+
+/* 高分辨率屏幕优化 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+/* 深色模式适配（系统级） */
+@media (prefers-color-scheme: dark) {
+  /* 已经是暗色主题，保持现有样式 */
+}
+
+/* 减少动画偏好适配 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .card {
+    background: white;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+/* 自定义滚动条（Webkit） */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* 选中文本样式 */
+::selection {
+  background: rgba(88, 101, 242, 0.3);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: rgba(88, 101, 242, 0.3);
+  color: var(--text-primary);
+}
+
+/* 焦点可见性增强 */
+:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 2px;
+}
+
+/* 动画定义 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 工具提示样式 */
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted var(--text-secondary);
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-small);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* 特殊字符和符号优化 */
+.math {
+  font-family: "STIX Two Math", "Latin Modern Math", "Cambria Math", serif;
+  text-align: center;
+}
+
+.chinese {
+  font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", serif;
+  text-align: center;
+}
+
+.japanese {
+  font-family: "Noto Serif CJK JP", "Source Han Serif JP", "Yu Mincho", serif;
+  text-align: center;
+}
+
+/* 无障碍增强 */
+@media (prefers-contrast: high) {
+  :root {
+    --text-primary: #ffffff;
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --border-color: #666666;
+  }
+}
+
+/* 最终优化 */
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card-content::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(45deg, var(--highlight), var(--text-accent));
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-content::before {
+  opacity: 0.1;
+}

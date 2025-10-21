@@ -1,0 +1,525 @@
+/* Anki 星尘主题 - 专为Anki卡片环境优化 */
+:root {
+    /* 深空色彩系统 - 护眼优先 */
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: rgba(20, 25, 35, 0.9);
+    --bg-field: rgba(25, 30, 40, 0.7);
+    
+    /* 星尘色彩 */
+    --stardust-bright: #e8f4fd;
+    --stardust-dim: #7a8fa3;
+    --stardust-faint: #4a5568;
+    
+    /* 文字色彩 - 提高对比度 */
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-accent: #7dd3fc;
+    --text-highlight: #fbbf24;
+    
+    /* 边框和阴影 */
+    --border-subtle: rgba(148, 163, 184, 0.3);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5);
+  
+  /* 字体设置 */
+  --font-serif: "Times New Roman", "Noto Serif CJK SC", "Source Han Serif SC", 
+                "Songti SC", "SimSun", serif;
+  --font-size-base: 16px;
+  --font-size-large: 20px;
+  --font-size-small: 14px;
+  
+  /* 间距设置 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* 圆角设置 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* 静态星尘背景 - 专为Anki优化 */
+body {
+    background: var(--bg-primary);
+    background-image: 
+        /* 远景星尘 - 小而密集 */
+        radial-gradient(1px 1px at 20px 30px, var(--stardust-faint), transparent),
+        radial-gradient(1px 1px at 40px 70px, var(--stardust-faint), transparent),
+        radial-gradient(1px 1px at 90px 40px, var(--stardust-faint), transparent),
+        radial-gradient(1px 1px at 130px 80px, var(--stardust-faint), transparent),
+        radial-gradient(1px 1px at 160px 30px, var(--stardust-faint), transparent),
+        
+        /* 中景星尘 - 中等大小 */
+        radial-gradient(2px 2px at 80px 100px, var(--stardust-dim), transparent),
+        radial-gradient(2px 2px at 200px 50px, var(--stardust-dim), transparent),
+        radial-gradient(2px 2px at 300px 120px, var(--stardust-dim), transparent),
+        radial-gradient(2px 2px at 400px 90px, var(--stardust-dim), transparent),
+        
+        /* 近景星尘 - 大而亮 */
+        radial-gradient(3px 3px at 150px 150px, var(--stardust-bright), transparent),
+        radial-gradient(3px 3px at 350px 200px, var(--stardust-bright), transparent),
+        radial-gradient(2px 2px at 250px 100px, var(--stardust-bright), transparent);
+    
+    background-size: 
+        200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px,
+        300px 300px, 300px 300px, 300px 300px, 300px 300px,
+        400px 400px, 400px 400px, 400px 400px;
+    
+    font-family: var(--font-serif);
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Anki卡片容器样式 */
+.card {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-subtle);
+    margin: 16px auto;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* 文字居中显示 */
+}
+
+/* 卡片内部星尘装饰 */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(1px 1px at 30px 40px, var(--stardust-bright), transparent),
+        radial-gradient(1px 1px at 80px 20px, var(--stardust-dim), transparent),
+        radial-gradient(2px 2px at 120px 60px, var(--stardust-faint), transparent);
+    background-size: 150px 150px, 200px 200px, 250px 250px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Anki字段样式 */
+.field {
+    background: var(--bg-field);
+    padding: 12px 16px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    line-height: 1.6;
+    box-shadow: var(--shadow-soft);
+}
+
+.field:first-child {
+    margin-top: 0;
+}
+
+.field:last-child {
+    margin-bottom: 0;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+    text-align: center; /* 标题居中 */
+}
+
+h1 {
+    font-size: var(--font-size-xxl); /* 使用变量控制字体大小 */
+    color: var(--text-accent);
+    text-shadow: 0 0 10px rgba(125, 211, 252, 0.3);
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: var(--font-size-xl); /* 使用变量控制字体大小 */
+    color: var(--text-accent);
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: var(--font-size-large); /* 使用变量控制字体大小 */
+    color: var(--text-secondary);
+}
+
+/* 段落和文本样式 */
+p {
+    margin: 0 0 16px 0;
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-size: var(--font-size-base); /* 使用变量控制字体大小 */
+    text-align: center; /* 段落文字居中 */
+}
+
+/* 强调文本 */
+strong, b {
+    color: var(--text-highlight);
+    font-weight: 600;
+}
+
+em, i {
+    color: var(--text-accent);
+    font-style: italic;
+}
+
+/* 引用样式 */
+blockquote {
+    background: var(--bg-field);
+    border-left: 4px solid var(--text-accent);
+    margin: 20px 0;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--text-secondary);
+    box-shadow: var(--shadow-soft);
+}
+
+/* 列表样式 */
+ul, ol {
+    margin: 16px 0;
+    padding-left: 24px;
+    color: var(--text-primary);
+}
+
+li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* 代码样式 */
+code {
+    background: var(--bg-field);
+    color: var(--text-accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background: var(--bg-field);
+    color: var(--text-primary);
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 16px 0;
+    border: 1px solid var(--border-subtle);
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* 段落和文本样式 */
+p {
+  margin: 0 0 var(--spacing-md) 0;
+  text-align: justify;
+}
+
+/* 强调文本 */
+strong, b {
+  color: var(--text-accent);
+  font-weight: 700;
+}
+
+em, i {
+  color: var(--success);
+  font-style: italic;
+}
+
+/* 链接样式 */
+a {
+  color: var(--highlight);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--highlight);
+}
+
+/* 列表样式 */
+ul, ol {
+  margin: 0 0 var(--spacing-md) 0;
+  padding-left: var(--spacing-lg);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+ul li::marker {
+  color: var(--text-accent);
+}
+
+ol li::marker {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* 引用块样式 */
+blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: rgba(46, 52, 64, 0.5);
+  border-left: 4px solid var(--highlight);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* 代码样式 */
+code {
+  background: rgba(59, 66, 82, 0.8);
+  color: var(--success);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: rgba(59, 66, 82, 0.8);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* 分隔线 */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: var(--spacing-xl) 0;
+}
+
+/* 特殊内容区域 */
+.section {
+    margin: 24px 0;
+    padding: 0;
+}
+
+.highlight {
+    background: linear-gradient(135deg, var(--bg-field), rgba(125, 211, 252, 0.1));
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid var(--text-accent);
+    margin: 16px 0;
+    color: var(--text-primary);
+    box-shadow: var(--shadow-soft);
+}
+
+.warning {
+    background: rgba(235, 203, 139, 0.15);
+    border-left: 3px solid var(--warning);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.success {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(34, 197, 94, 0.05));
+    color: #10b981;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Anki专用字段样式 */
+.front, .back {
+  background: transparent;
+}
+
+/* 卡片类型样式 */
+.front {
+    text-align: center;
+    padding: 40px 24px;
+}
+
+.back {
+    text-align: center; /* 背面卡片也居中显示 */
+}
+
+.question {
+  background: rgba(136, 192, 208, 0.1);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(136, 192, 208, 0.3);
+  margin-bottom: var(--spacing-lg);
+}
+
+.answer {
+  background: rgba(163, 190, 140, 0.1);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(163, 190, 140, 0.3);
+}
+
+/* 英文内容样式 */
+.content-en {
+  font-size: var(--font-size-large);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-style: italic;
+  background: rgba(136, 192, 208, 0.05);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin: var(--spacing-sm) 0;
+  text-align: center;
+}
+
+/* 中文内容样式 */
+.content-zh {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  background: rgba(129, 161, 193, 0.05);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin: var(--spacing-sm) 0;
+  text-align: center;
+}
+
+/* 标题样式 */
+.title {
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  color: var(--text-highlight);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-xs);
+  text-align: center;
+}
+
+/* 内容分割线 */
+.section {
+  padding-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* 选中文本样式 */
+::selection {
+  background: rgba(136, 192, 208, 0.3);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: rgba(136, 192, 208, 0.3);
+  color: var(--text-primary);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .card {
+        margin: 8px;
+        padding: 16px;
+        max-width: none;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    body {
+        padding: 10px;
+        background-size: 
+            150px 150px, 150px 150px, 150px 150px, 150px 150px, 150px 150px,
+            200px 200px, 200px 200px, 200px 200px, 200px 200px,
+            250px 250px, 250px 250px, 250px 250px;
+    }
+}
+
+/* 无障碍和可读性优化 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    :root {
+        --text-primary: #ffffff;
+        --text-secondary: #e5e5e5;
+        --bg-card: rgba(0, 0, 0, 0.9);
+        --border-subtle: rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* 打印样式 */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .card {
+        background: white !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+    
+    .card::before {
+        display: none !important;
+    }
+    
+    .highlight, .warning, .success {
+        background: #f5f5f5;
+        border-left-color: #333;
+    }
+}

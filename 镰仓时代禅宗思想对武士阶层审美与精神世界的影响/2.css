@@ -1,0 +1,123 @@
+.card {
+    /* 主字体：使用衬线字体 */
+    font-family: 'Times New Roman', serif;
+    
+    /* 护眼暗色背景：深邃的炭灰色略带蓝紫 */
+    background-color: #1a1b26;
+    /* 增加一个细微的渐变背景，模拟深空 */
+    background: linear-gradient(225deg, #1a1b26 0%, #0d1117 50%, #1f2a3d 100%);
+
+    /* 默认文本颜色：柔和的星光白 */
+    color: #d8dee9;
+    
+    /* 保证卡片居中和全屏显示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* -------------------- 2. 卡片正面：极致专注 -------------------- */
+.card-front {
+    /* 继承 .card 的居中样式，无需重复定义 */
+    font-size: 64px; /* 从56px增加到64px，进一步增大视觉焦点 */
+    font-weight: bold;
+    color: #e5e9f0; /* 略亮的白色，突出显示 */
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* -------------------- 3. 卡片背面：毛玻璃容器 -------------------- */
+/* 用一个容器将所有内容包裹起来，实现悬浮效果 */
+.card-container {
+    /* 毛玻璃效果 */
+    background: rgba(46, 52, 64, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    /* 结构和边框 */
+    border-radius: 12px;
+    padding: 30px 40px;
+    text-align: center; /* 修改为居中对齐 */
+    border: 1px solid rgba(216, 222, 233, 0.1); /* 极细的浅色边框 */
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+    
+    /* 优化性能和动画过渡 */
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    max-width: 800px; /* 限制宽度，优化长文本阅读体验 */
+    width: 90%;
+}
+
+/* 悬浮交互：卡片轻微上浮和阴影加深 */
+.card-container:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.6);
+    border-color: rgba(216, 222, 233, 0.2);
+}
+
+
+/* -------------------- 4. 动画效果 (优雅呈现) -------------------- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card .section {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+}
+/* 延迟加载，引导视线 */
+.card .section:nth-child(1) { animation-delay: 0.2s; }
+.card .section:nth-child(2) { animation-delay: 0.4s; }
+.card .section:nth-child(3) { animation-delay: 0.6s; }
+
+
+/* -------------------- 5. 排版与细节 -------------------- */
+
+/* 卡片背面内容区块 */
+.card .section {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    /* 纤细的渐变分割线 */
+    border-bottom: 1px solid transparent; 
+    border-image: linear-gradient(to right, 
+        rgba(136, 192, 208, 0) 0%, 
+        rgba(136, 192, 208, 0.3) 50%, 
+        rgba(136, 192, 208, 0) 100%);
+    border-image-slice: 1;
+}
+.card .section:last-child {
+    border-bottom: none; /* 最后一个区块移除分割线 */
+    margin-bottom: 0;
+}
+
+/* 科技感小标题 (Nebula Blue) */
+.card .title {
+    font-size: 18px; /* 从16px增加到18px */
+    font-weight: 600;
+    color: #88c0d0; /* 宁静的青蓝色 */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* 小标题全大写 */
+    letter-spacing: 2px; /* 增加字母间距 */
+    text-align: center; /* 确保标题居中 */
+}
+
+/* 英文例句内容 (稍亮，突出其重要性) */
+.card .content-en {
+    font-size: 22px; /* 从20px增加到22px */
+    color: #e5e9f0; /* 亮白色 */
+    line-height: 1.6;
+    font-style: italic; /* 斜体以区分，更具学术感 */
+    text-align: center; /* 确保英文内容居中 */
+}
+
+/* 中文定义/释义内容 (柔和的颜色，注重可读性) */
+.card .content-zh {
+    font-size: 20px; /* 从18px增加到20px */
+    color: #d8dee9; /* 柔和星光白 */
+    line-height: 1.7;
+    text-align: center; /* 确保中文内容居中 */
+}

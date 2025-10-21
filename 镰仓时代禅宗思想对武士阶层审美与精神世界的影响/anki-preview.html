@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anki 星尘主题预览</title>
+    <link rel="stylesheet" href="anki-stardust.css">
+    <style>
+        /* 模拟Anki环境的基础样式 */
+        body {
+            background: var(--bg-primary);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .anki-container {
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="anki-container">
+        <!-- 正面卡片 -->
+        <div class="card front">
+            <div class="question">
+                <h2 class="title">小李是中国人</h2>
+                <div class="content-en">I am a Chinese person.</div>
+                <div class="content-zh">我是中国人。</div>
+            </div>
+        </div>
+        
+        <!-- 背面卡片 -->
+        <div class="card back" style="margin-top: 30px;">
+            <div class="answer">
+                <h1>镰仓时代禅宗思想对武士阶层审美与精神世界的影响</h1>
+                
+                <div class="section">
+                    <h2>禅宗的传入</h2>
+                    <p>镰仓时代（1185-1333年）是日本历史上的一个重要转折点，武士阶层的崛起与禅宗思想的传入相互交融，深刻影响了日本文化的发展轨迹。</p>
+                    
+                    <blockquote>
+                        "直指人心，见性成佛" - 禅宗核心理念
+                    </blockquote>
+                </div>
+                
+                <div class="section">
+                    <h2>武士精神的重塑</h2>
+                    <p>禅宗的<strong>无心</strong>理念与武士面对生死的日常现实产生了深刻共鸣。通过坐禅修行，武士们学会了在刀光剑影中保持内心的宁静。</p>
+                    
+                    <div class="highlight">
+                        重要概念：无心（Mushin）- 超越生死恐惧的精神境界
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>侘寂美学的诞生</h2>
+                    <p>从奢华的平安时代审美转向简素的<em>侘寂</em>之美，这一转变体现了禅宗思想对日本审美观念的深刻影响。</p>
+                    
+                    <ul>
+                        <li>侘（Wabi）- 简朴之美</li>
+                        <li>寂（Sabi）- 时间沉淀的美</li>
+                        <li>幽玄（Yugen）- 深邃含蓄的美</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="success">
+                        ✓ 专为Anki环境优化的星尘主题，兼容性优先，护眼学习
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 字段样式示例 -->
+        <div class="card" style="margin-top: 30px;">
+            <div class="field">
+                <strong>字段1：</strong> 这是一个Anki字段的示例内容
+            </div>
+            <div class="field">
+                <strong>字段2：</strong> 展示不同字段的样式效果
+            </div>
+            <div class="field">
+                <strong>代码示例：</strong> <code>console.log("Hello Anki!");</code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
