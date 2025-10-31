@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="GAMECONFIG">{&quot;cer_exp&quot;:&quot;2026-01-17&quot;,&quot;channel_config&quot;:{},&quot;channel_id&quot;:1,&quot;extra&quot;:{&quot;buriedpointswitch&quot;:&quot;1&quot;,&quot;caid&quot;:&quot;1&quot;,&quot;cer_close&quot;:&quot;1&quot;,&quot;dataUpload_Close&quot;:&quot;1&quot;,&quot;iosid&quot;:&quot;1&quot;,&quot;jingpin_data&quot;:&quot;0&quot;,&quot;privacy_china&quot;:&quot;0&quot;},&quot;net_detect_config&quot;:false,&quot;os&quot;:&quot;android&quot;,&quot;product_id&quot;:5205,&quot;server_list&quot;:{},&quot;status&quot;:2}</string>
+</map>

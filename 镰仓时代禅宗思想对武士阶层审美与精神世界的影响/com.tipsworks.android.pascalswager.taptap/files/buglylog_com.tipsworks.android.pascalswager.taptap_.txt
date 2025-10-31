@@ -1,0 +1,155 @@
+08-26 19:19:30 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError on Login  In C# Client retCode = 0,frameCount=1468  json={"account":"_qq_m_0CCB3758D396F720B53F34EE55D869FE","token":"u5399829ad3691eeacf3a5d120t1lm4i","accid":"1-340428866","channel":1,"mobile_type":"TB321FU","device_type":"TB321FU","imei":"","ip":"192.168.1.79","mac":"","type":4,"entity":{"openid":"1-340428866","account":"_qq_m_0CCB3758D396F720B53F34EE55D869FE","account_type":528,"type":4,"time":1756207170},"extra_data":{"createtime":1733938822,"is_bind_mobile":0,"original_type":4,"thrid_info":{"unionid":"","openid":"0CCB3758D396F720B53F34EE55D869FE","nickname":"6Zi\/5ri4","sex":0,"headimgurl":"http:\/\/thirdqq.qlogo.cn\/ek_qqapp\/AQCQJX8ZcUZ0qIhzhUBib31DwE08lgvCx8bojXB4yRKRkZviay7Q6F14gYLlZ4Z9RRrIibP2OanuTiaIedicoByLVcQIs7ib0fe34icXljrQXYcCP8y8pIW32IsndcQFV0QBw\/100","email":"","province":"","city":"","user_id":""},"login_channel":1},"sign":"aZqpOtacEwM4Hyjos5\/oN1xnSM4IC03ujzPMa0+i2\/+nqytX7SpUcbb2vskIX4n6Qgk3YPN4sSCt\/vBBr64jlMmV18qm3\/FEi\/s824jBK1dol4x\/y7V+UQ\/hPQdBKNRK4BNBwLZzjC4a6t7MFyNYoW8YUx2+dRNCte\/0GUKZa79UqSz2dVwdgZfJkxNBd6nCDetKKIrwP13nY3udYcaPa0pZtTMKdUe0iqA3yU57x0kYrIfOTFYufeCWf+VeBfQsW+Ig8BmBVZ51qeE3Bo9cL5txHYmoy\/KiCzpkzv\/vgIbZb\/hgPtN9R4L3VGiLQvXcG2msdAm5kcRD+8WyQoypGg=="}
+*********
+SDKFacadeGaint.<Init>b__7_1(Int32, String)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero90008.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20025.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20023.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20019.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20020.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20018.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20003.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20021.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:19:45 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20017.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20018.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20019.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20032.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20020.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20021.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20033.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:31:46 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20025.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero90008.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20025.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20023.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20019.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20020.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20018.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20003.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20021.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********
+08-26 19:33:15 17185 17185 E CrashReport-GameAgent: <LogError> - ReportException: UnityLogError Unable to open archive file: jar:file:///data/app/~~UcbruVBoiHQTd8f0ObL7tw==/com.tipsworks.android.pascalswager.taptap-G9qqz4yvQAYDQt5YZ_cHQA==/base.apk!/assets/android/haptic/hero20017.unity3d
+*********
+LuaFramework.HapticManager.LoadBundle(String)
+LuaFramework_HapticManagerWrap.LoadBundle(IntPtr)
+
+*********

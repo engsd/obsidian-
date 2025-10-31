@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="privacy_checkbox">0</string>
+    <string name="CER_EXP">2026-01-17</string>
+    <int name="giant_user_level" value="4" />
+    <boolean name="giant_user_agree_privacy" value="true" />
+    <string name="giant_user_view_name_safe">0KVP+4rfRs0NTKYLGmdqTg==</string>
+    <string name="mpayrecomm_page_result">{&quot;1-340428866&quot;:{&quot;methods&quot;:&quot;1|14|27|21|28&quot;,&quot;page_type&quot;:2,&quot;extra&quot;:{&quot;methods_when_fail&quot;:&quot;&quot;,&quot;qrmethod_when_fail&quot;:&quot;&quot;},&quot;isHardcode&quot;:1,&quot;appunid&quot;:&quot;5DH59K6O1e2KPUU259941bba72&quot;,&quot;last_pay_type&quot;:&quot;&quot;,&quot;last_paymentcrop&quot;:&quot;&quot;,&quot;openid&quot;:&quot;1-340428866&quot;,&quot;back_pay_host&quot;:&quot;sdk-pay.ztgame.com&quot;},&quot;1-1140432788&quot;:{&quot;algo_tag&quot;:&quot;0.1.1&quot;,&quot;page_type&quot;:2,&quot;methods&quot;:&quot;1|14|27|21|28&quot;,&quot;extra&quot;:{&quot;methods_when_fail&quot;:&quot;14|1|21&quot;,&quot;qrmethod_when_fail&quot;:&quot;18&quot;},&quot;appunid&quot;:&quot;5DH59K6O1e2KPUU259941bba72&quot;,&quot;last_pay_type&quot;:&quot;&quot;,&quot;last_paymentcrop&quot;:&quot;&quot;,&quot;openid&quot;:&quot;1-1140432788&quot;}}</string>
+    <string name="screenshot">[&quot;截屏&quot;]</string>
+    <string name="giant_user_uid">340428866</string>
+    <string name="GAMECONFIG"></string>
+    <string name="firstInstallTime">2025-08-18 06:04:42</string>
+    <boolean name="ISUSEDOWNLOADCER" value="true" />
+    <boolean name="giant_user_is_logout" value="false" />
+    <string name="LatestVersion">1.6.8</string>
+    <string name="onekeylogin_authcode"></string>
+    <string name="giant_user_mobile"></string>
+    <int name="giant_user_login_ways" value="1" />
+    <string name="channel_id">1</string>
+    <string name="server_list_spkey">{}</string>
+    <string name="game_id">5205</string>
+    <string name="giant_user_account"></string>
+</map>

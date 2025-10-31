@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="kitsBitmask" value="3" />
+    <string name="PCKGCHKSUM;1.6.8">2a01518a0e1566520119b05b0c32d63d</string>
+    <string name="anonymousAppDeviceGUID">XZ2c32365f-5efc-418a-82d3-a6cec8939f84</string>
+    <boolean name="is_referrer_updated" value="true" />
+</map>

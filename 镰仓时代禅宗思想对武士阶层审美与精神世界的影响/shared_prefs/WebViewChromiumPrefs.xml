@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <set name="CachedFlagsEnabled" />
+    <set name="CachedFlagsDisabled">
+        <string>WebViewUseStartupTasksLogicP2</string>
+        <string>WebViewUseBackgroundThreadForGms</string>
+        <string>WebViewDisableCHIPS</string>
+        <string>WebViewEarlyStartupTracing</string>
+        <string>WebViewStartupTasksYieldToNative</string>
+        <string>WebViewReducedSeedExpiration</string>
+        <string>WebViewReducedSeedRequestPeriod</string>
+        <string>WebViewUseStartupTasksLogic</string>
+    </set>
+    <int name="lastVersionCodeUsed" value="739012233" />
+</map>
